@@ -1,0 +1,23 @@
+.title {
+  margin-left: 40px;
+}
+
+.list {
+  margin-left: 40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list > li {
+  padding-bottom: 10px;
+}
+
+.min,
+.max {
+  font-weight: bold;
+}
+
+.min {
+  padding-top: 20px;
+}
