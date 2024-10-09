@@ -10,10 +10,11 @@ function showCitiesTemperatures() {
     let temperature = askTemperature(city);
 
     while (
-      temperature === '' ||
-      !isFinite(temperature) ||
-      temperature < -50 ||
-      temperature > 50
+      temperature !== null &&
+      (temperature === '' ||
+        !isFinite(temperature) ||
+        temperature < -50 ||
+        temperature > 50)
     ) {
       alert(`Введены некорректные значения`);
       temperature = askTemperature(city);
